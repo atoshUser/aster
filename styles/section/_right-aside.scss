@@ -159,4 +159,12 @@ color:$textColor;
   border-radius:10px;
   border:none;
   font-size: 15px;
+
+    &:hover{
+       background-color: #fff;
+       color:$primaryColor;
+       border: 1px solid $primaryColor;
+       transition: background-color 0.7s ease,
+        color 0.7s ease;
+    }
 }

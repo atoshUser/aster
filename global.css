@@ -548,6 +548,12 @@ hr {
   border: none;
   font-size: 15px;
 }
+.input-btn:hover {
+  background-color: #fff;
+  color: #2F9FF8;
+  border: 1px solid #2F9FF8;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
 
 @font-face {
   font-family: "Roboto";
