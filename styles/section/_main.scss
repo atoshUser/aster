@@ -1,0 +1,152 @@
+
+
+
+
+
+
+.site-main {
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+}
+.site-main__heading {
+  font-weight: 700;
+  font-size: 20px;
+color:$textColor;
+margin-bottom: 28px;
+}
+.site-main__nav {
+}
+.site-main__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+
+
+      &::after{
+cursor: pointer;
+        @include icon($img:url(/assets/icons/icon-menu.svg));
+      }
+}
+.site-main__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 17px;
+  background-color: #fff;
+  border-radius: 20px;
+
+
+           &:first-child{
+             background-color: $primaryColor;
+              & a{
+                color:#fff;
+              }
+           }
+     &:hover{
+       background-color:$primaryColor;
+       transition: background-color 0.5s ease;
+
+          & a{
+            transition: color 1s ease;
+            color: #fff;
+
+         }
+     }
+}
+.site-main__link {
+  text-decoration: none;
+  color:$textColor;
+
+
+}
+
+
+.features {
+  width: 770px;
+
+}
+.features__list {
+  width: 100%;
+ display: grid;
+ grid-template-columns: repeat(2,395px);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  padding: 0;
+}
+.fatures__item {
+display: flex;
+flex-direction: column;
+padding: 17px;
+border-radius:4px;
+
+background-color:#fff;
+
+      &:first-child{
+        grid-column: span 2;
+
+
+        .features__info-box{
+          margin-right: 30px;
+        }
+      }
+
+
+}
+.features__info {
+  display: flex;
+  margin-bottom: auto;
+}
+
+.features__info-box{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+
+
+.features__heading {
+  font-size: 17px;
+  font-weight: 500;
+  color:$textColor;
+}
+.features__paragraph {
+
+
+
+  &:hover{
+    cursor: pointer;
+    color:$primaryColor;
+  }
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.features__footer {
+  display: flex;
+  align-items:center;
+  gap: 20px;
+  white-space: nowrap;
+    p{
+      margin: 0;
+    }
+}
+.dispatch {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  white-space: nowrap;
+}
+.dispatch__link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 8px;
+}
+.dispatch-icon {
+}

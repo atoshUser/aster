@@ -130,4 +130,11 @@ color:$black;
   padding: 10px 27px;
   background-color:$darkBlue;
   color:#fff;
+
+    &:hover{
+      transition: background-color 1s ease,
+       color 1s ease;
+      background-color:#fff;
+      color:$primaryColor;
+    }
 }

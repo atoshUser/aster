@@ -34,6 +34,9 @@ white-space: nowrap;
  background-color:rgb(7, 45, 75,0.1);
  border-radius: 10px;
  padding-right: 12px;
+
+ position: relative;
+ left: -210px;
   &::after{
     display: block;
     content: " ";
