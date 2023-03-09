@@ -107,10 +107,118 @@
   margin-bottom: none;
 }
 
-* {
-  margin: 0;
+.side-left {
+  width: 260px;
+}
+
+.side-left__list {
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
+  margin-bottom: 123px;
+}
+
+.side-left__item {
+  display: flex;
+  align-items: center;
+  width: 243px;
+  padding: 10px 10px 10px 35px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.side-left__item:first-child ::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: " ";
+  background-image: url(/assets/icons/icon-home.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.side-left__item:hover {
+  transition: background-color 0.5s ease;
+  background-color: lightblue;
+}
+.side-left__item:hover::before {
+  content: " ";
+  color: #2F9FF8;
+  font-weight: bold;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 100px;
+  background-color: #2F9FF8;
+  position: absolute;
+  margin-left: -15px;
+}
+.side-left__item:hover .side-left__link {
+  transition: color 0.5s ease;
+  color: #2F9FF8;
+}
+.side-left__item:hover .icon-aside {
+  transition: color 0.5s ease;
+  color: #2F9FF8;
+}
+
+.side-left__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: rgb(23, 27, 23);
+}
+
+.icon-aside {
+  display: flex;
+  color: rgb(23, 27, 23);
+}
+
+.discount {
+  width: 227px;
+  padding: 20px;
+  background-color: #2F9FF8;
+  color: #fff;
+  margin-left: 16px;
+  border-radius: 10px;
+}
+
+.discount__heading {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  gap: 15px;
+  margin-bottom: 13px;
+}
+.discount__heading::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: " ";
+  background-image: url(/assets/icons/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.discount__cost {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.discount__cost p {
+  margin-bottom: 0;
+}
+.discount__cost p b {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.button {
+  padding: 10px 27px;
+  background-color: #0768B5;
+  color: #fff;
 }
 
 @font-face {
@@ -136,6 +244,12 @@
 }
 *:focus {
   outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
