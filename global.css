@@ -137,6 +137,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.side-left__item:first-child::before {
+  content: " ";
+  width: 7px;
+  height: 7px;
+  background-color: #2F9FF8;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+  margin-left: -15px;
+}
 .side-left__item:hover {
   transition: background-color 0.5s ease;
   background-color: lightblue;
