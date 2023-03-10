@@ -374,6 +374,120 @@
   gap: 8px;
 }
 
+.new:first-child {
+  grid-column: 1/2;
+}
+
+.author-box {
+  width: 100%;
+}
+
+.author-box__heading {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #072D4B;
+  gap: 10px;
+}
+.author-box__heading::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: " ";
+  background-image: url(/assets/icons/icon-feather.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.author__heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author__heading-wrapper span {
+  display: flex;
+  gap: 10px;
+}
+
+.authors__list {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.authors__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.authors__img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.author__name {
+  font-weight: 500;
+  color: #072D4B;
+  font-size: 14px;
+}
+
+.author__text {
+  margin-bottom: 8px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 33px;
+  border: none;
+  border-radius: 5px;
+}
+
+.top-news {
+  margin-bottom: 45px;
+}
+
+.btn-cta {
+  margin-bottom: 80px;
+  width: 120px;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #072D4B;
+  color: #072D4B;
+}
+
+.hr {
+  margin-bottom: 23px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: rgba(7, 45, 75, 0.4);
+}
+
 .site-right {
   display: flex;
   flex-direction: column;
@@ -547,6 +661,7 @@ hr {
   border-radius: 10px;
   border: none;
   font-size: 15px;
+  border: 1px solid #2F9FF8;
 }
 .input-btn:hover {
   background-color: #fff;
